@@ -1,4 +1,4 @@
-# git-tutorial
+# git Tutorial
 git을 배우자
 ## 개념정리
 ## 당황당스러운 상황들 정리
@@ -9,7 +9,6 @@ git을 배우자
 ```
 git push origin {local_branch_name}:{remote_branch_name} 
 git push origin Feature/fix_event_listener:feature/fix_event_listener 
-
 ```
 으로 리모트 브랜치라도 소문자로 변환 가능하다.
 
