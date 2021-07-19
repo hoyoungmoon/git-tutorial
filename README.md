@@ -10,6 +10,8 @@ origin/HEAD는 특정 리모트 브랜치의 현재 생성된 커밋을 가리�
 **git branch -r** 입력시 origin/HEAD -> origin/develop 등으로 나타나는 것을 확인할 수 있다. 이는 원격 저장소에 있는 develop이라는 브랜치를 origin/HEAD가 가리키고 있다는 뜻이다.
 
 ## 당황당스러운 상황들 정리
+### git clone SSH로 받아보기
+[SSH 등록 참고](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 ### 리모트 또는 로컬 브랜치명이 자꾸 대문자로 변환되는 상황
 원인은 아마 처음에 대문자로 저장을 해서 (예로 Feature/fix_event_listener) 그럴 가능성이 높다
 
