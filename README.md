@@ -8,6 +8,11 @@ git을 배우자
 **HEAD**는 커밋을 가르키는 참조 포인터 개념이다. 새로운 커밋은 부모 커밋을 기반으로 새로운 커밋을 생성하는 것이고 HEAD는 부모 커밋을 가리키고 있다. (처음 깃을 설치하고 처음 커밋할 땐 HEAD 없음)
 origin/HEAD는 특정 리모트 브랜치의 현재 생성된 커밋을 가리키고 있다.
 **git branch -r** 입력시 origin/HEAD -> origin/develop 등으로 나타나는 것을 확인할 수 있다. 이는 원격 저장소에 있는 develop이라는 브랜치를 origin/HEAD가 가리키고 있다는 뜻이다.
+## 기본 명령어
+git init
+
+git remote add origin (git repo)
+
 
 ## 당황당스러운 상황들 정리
 ### git clone SSH로 받아보기
@@ -35,3 +40,6 @@ git stash pop : 숨겨놓은 파일 다시 꺼내고 stash list에서 삭제
 
 ### 다른 작업자 또는 다른 브랜치에서 작업한 커밋을 가지고 와야될 때
 git cherry-pick
+
+### develop 브랜치에서 checkout 한지 너무 오래되었을 때
+내 브랜치를 develop 브랜치의 commit들을 다시 merge해서 작업하자
