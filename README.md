@@ -26,7 +26,7 @@ git remote add origin (git repo)
 
 <br/>
 
-## 당황당스러운 상황들 정리
+## 몰랐던 상황들 정리
 ### git clone SSH로 받아보기
 [SSH 등록 참고](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 
