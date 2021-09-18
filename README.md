@@ -15,7 +15,11 @@ origin/HEAD는 특정 리모트 브랜치의 현재 생성된 커밋을 가리�
 **git branch -r** 입력시 origin/HEAD -> origin/develop 등으로 나타나는 것을 확인할 수 있다. 이는 원격 저장소에 있는 develop이라는 브랜치를 origin/HEAD가 가리키고 있다는 뜻이다.
 ### upstream
 로컬브랜치와 연결된 원격저장소
-
+```
+git push --set-upstream origin feature_branch
+git push -u origin feature_branch
+```
+위 명령어로 push를 하게 되면 origin과 해당 feature_branch가 upstream, downstream 관계가 형성되어 다음 부턴 git push만 입력하여도 된다.
 <br/>
 
 
