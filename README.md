@@ -20,7 +20,7 @@ git push --set-upstream origin feature_branch
 git push -u origin feature_branch
 ```
 위 명령어로 push를 하게 되면 origin과 해당 feature_branch가 upstream, downstream 관계가 형성되어 다음 부턴 git push만 입력하여도 된다.
-<br/>
+<br/> 
 
 
 ## 기본 명령어
