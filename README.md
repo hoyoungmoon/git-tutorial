@@ -88,3 +88,12 @@ git reset --soft HEAD~1
 단, **git reset --hard HEAD~1** 을 하게 되면 방금 한 commit과 함께 기존의 unstaged된 수정파일이 사라지게 되므로 사용에 주의해야한다. 
 
 #### reset과 revert의 차이점 ([참고](https://velog.io/@sonypark/git-reset-vs-git-revert-%EC%B0%A8%EC%9D%B4))
+
+<br/>
+
+### 이미 리모트에 푸시한 브랜치를 rebase 해야할 때
+rebase 후 --force로 푸시할 수 있다.
+```
+git push --force origin {feature_branch_name}
+```
+
