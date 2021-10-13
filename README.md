@@ -24,9 +24,24 @@ git push -u origin feature_branch
 
 
 ## 기본 명령어
-git init
+- git init
 
-git remote add origin (git repo)
+- git remote add origin (git repo)
+
+- git fetch
+
+  특정 브랜치에 병합 없이 **FETCH_HEAD**라는 브랜치로 최신 커밋 정보를 가져오기만 한다
+  ```
+  git fetch origin {branch_name}
+
+  // 커밋 비교하고 병합할지 말지 결정
+  git checkout FETCH_HEAD 
+  git diff HEAD origin/{branch_name}
+
+  // 병합시
+  git checkout {branch_name}
+  git merge FETCH_HEAD or git merge origin/{branch_name}
+  ```
 
 
 <br/>
