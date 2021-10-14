@@ -109,6 +109,12 @@ git reset --soft HEAD~1
 ### 이미 리모트에 푸시한 브랜치를 rebase 해야할 때
 rebase 후 --force로 푸시할 수 있다.
 ```
+git checkout develop
+git pull origin develop
+
+git checkout {feature_branch_name}
+git rebase develop
+
 git push --force origin {feature_branch_name}
 ```
 
