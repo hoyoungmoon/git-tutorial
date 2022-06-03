@@ -117,4 +117,30 @@ git rebase develop
 
 git push --force origin {feature_branch_name}
 ```
+- rebase 후 git pull에서 오류 발생하는 이유
+```
+rebase 전
+A - B - C - F (master)
+         \
+          D - E (feature, origin/feature)
+          
+
+rebase 후          
+A - B - C - F (master)
+         \   \
+          \   D' - E' (feature)
+           \
+             D - E (origin/feature)
+             
+             
+rebase 후 git pull(fetch + merge) 하는 경우             
+A - B - C - F (master)
+         \   \
+          \   D' - E'- M (feature)
+           \         /
+             D - E - (origin/feature)
+```
+git pull 하는 과정에서 E, E'가 M commit을 생성하기 위해 non-fast-forward merge하는 과정에서
+`Updates were rejected because the tip of your current branch is behind` 오류가 발생하게 된다.
+push -f 를 이용하여 강제로 push 해서 오류를 해결할 수 있다.
 
